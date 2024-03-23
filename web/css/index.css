@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 1200px;
+  height: 60px;
+  background-color: orange;
+  border-radius: 25px 0;
+}
+
+.border-right {
+  width: 2px;
+  height: 60px;
+  background-color: black;
+}
+
+.nav-btn {
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 25px 0;
+  font-size: large;
+}
+
+.nav-btn:hover {
+  box-shadow: 2px 2px 5px #888;
+}
+
+#create-new {
+  width: 120px;
+  margin-left: 30px;
+
+  float: left;
+}
+
+#copy-selected,
+#dele-selected,
+#sort-selected {
+  width: 120px;
+  float: right;
+  margin-right: 30px;
+}
+
+.main-content {
+  border-left: 2px solid orange;
+  width: 1200px;
+  padding: 10px 10px 0;
+}
+
+.note-list-head {
+  width: 1165px;
+  height: 40px;
+  background-color: orange;
+}
+
+.list-head {
+  display: inline-block;
+  height: 30px;
+}
+
+.list-checkbox-all {
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border: none;
+}
