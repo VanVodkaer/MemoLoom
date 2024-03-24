@@ -13,17 +13,12 @@ li {
   margin: 0 auto;
 }
 
+/* 导航栏部分 */
 .nav {
   width: 1200px;
   height: 60px;
   background-color: orange;
   border-radius: 25px 0;
-}
-
-.border-right {
-  width: 2px;
-  height: 60px;
-  background-color: black;
 }
 
 .nav-btn {
@@ -54,22 +49,24 @@ li {
   margin-right: 30px;
 }
 
+/* 笔记部分 */
+/* 笔记导航条 */
 .main-content {
   border-left: 2px solid orange;
   width: 1200px;
   padding: 10px 10px 0;
 }
 
-.note-list-head-nav {
+.note-list-head-box {
   width: 1165px;
   height: 40px;
   background-color: orange;
 }
 
 .note-list-head {
-  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: inline-block;
   background-color: #fff;
   text-align: center;
 }
@@ -81,19 +78,57 @@ li {
   margin: 10px;
 }
 
-#list-select-all-btn {
+#list-select-btn-all {
   width: 20px;
   height: 20px;
 }
 
-#list-note-title {
+#list-note-title-all {
   width: 500px;
   border-radius: 25px 0;
+}
+
+#list-create-date-all,
+#list-last-edited-all,
+#list-function-btn-all {
+  width: 200px;
+  border-radius: 25px 0;
+}
+
+/* 单条笔记模板 */
+.note-list-body-box {
+  margin-top: 5px;
+  width: 1165px;
+  height: 60px;
+  background-color: #eee;
+}
+
+.note-list-body {
+  float: left;
+  margin-top: 17px;
+}
+
+#list-select-btn {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+#list-note-title {
+  width: 480px;
+  /* 强制一行内显示文本 */
+  white-space: nowrap;
+  /* 溢出的部分隐藏起来 */
+  overflow: hidden;
+  /* 文字用省略号代替超出部分 */
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #list-create-date,
 #list-last-edited,
 #list-function-btn {
   width: 200px;
-  border-radius: 25px 0;
+  text-align: center;
 }
