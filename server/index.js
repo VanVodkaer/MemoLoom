@@ -1,5 +1,6 @@
 const http = require("http");
 const url = require("url");
+const config = require("./config.js");
 const read = require("./read.js");
 
 // 1. 启动服务端
@@ -14,13 +15,20 @@ server.on("request", async (req, res) => {
 
   if (relativePath === "/notedata") {
     const notedata = await read.readNoteList("/notedata");
+
+    const response = {
+      title: notedata,
+    };
+
     res.setHeader("Access-Control-Allow-Origin", "*"); // 允许所有来源
     res.setHeader("Content-Type", "text/plain;charset=utf-8");
-    res.end(JSON.stringify(notedata));
+    res.end(JSON.stringify(response));
   } else {
     res.setHeader("Content-Type", "text/plain;charset=utf-8");
-    res.end(relativePath);
+    res.end();
   }
 });
 
-server.listen(80, () => {});
+server.listen(config.port, () => {
+  console.log("Server Start");
+});

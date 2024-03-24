@@ -42,8 +42,7 @@ li {
 }
 
 #dele-selected,
-#copy-selected,
-#sort-selected {
+#copy-selected {
   width: 120px;
   float: right;
   margin-right: 30px;
@@ -108,13 +107,13 @@ li {
   margin-top: 17px;
 }
 
-#list-select-btn {
+.list-select-btn {
   width: 20px;
   height: 20px;
   margin: 0 10px;
 }
 
-#list-note-title {
+.list-note-title {
   width: 480px;
   /* 强制一行内显示文本 */
   white-space: nowrap;
@@ -126,9 +125,9 @@ li {
   margin-right: 10px;
 }
 
-#list-create-date,
-#list-last-edited,
-#list-function-btn {
+.list-create-date,
+.list-last-edited,
+.list-function-btn {
   width: 200px;
   text-align: center;
 }
