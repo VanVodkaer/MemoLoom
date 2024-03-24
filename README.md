@@ -1,6 +1,6 @@
 # MemoLoom
 
-English | [简体中文]()
+English | [简体中文](https://github.com/VanVodkaer/MemoLoom/blob/main/README_zh-CN.md)
 
 A web-based lightweight notebook
 
