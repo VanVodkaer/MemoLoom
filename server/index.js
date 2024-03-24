@@ -14,6 +14,7 @@ server.on("request", async (req, res) => {
 
   if (relativePath === "/notedata") {
     const notedata = await read.readNoteList("/notedata");
+    res.setHeader("Access-Control-Allow-Origin", "*"); // 允许所有来源
     res.setHeader("Content-Type", "text/plain;charset=utf-8");
     res.end(JSON.stringify(notedata));
   } else {
@@ -22,4 +23,4 @@ server.on("request", async (req, res) => {
   }
 });
 
-server.listen(3000, () => {});
+server.listen(80, () => {});
