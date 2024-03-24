@@ -46,8 +46,8 @@ li {
   float: left;
 }
 
-#copy-selected,
 #dele-selected,
+#copy-selected,
 #sort-selected {
   width: 120px;
   float: right;
@@ -60,20 +60,40 @@ li {
   padding: 10px 10px 0;
 }
 
-.note-list-head {
+.note-list-head-nav {
   width: 1165px;
   height: 40px;
   background-color: orange;
 }
 
-.list-head {
+.note-list-head {
   display: inline-block;
-  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  text-align: center;
 }
 
-.list-checkbox-all {
+#list-select-all {
+  display: flex;
+  float: left;
   width: 20px;
-  margin-top: 5px;
-  margin-left: 10px;
-  border: none;
+  margin: 10px;
+}
+
+#list-select-all-btn {
+  width: 20px;
+  height: 20px;
+}
+
+#list-note-title {
+  width: 500px;
+  border-radius: 25px 0;
+}
+
+#list-create-date,
+#list-last-edited,
+#list-function-btn {
+  width: 200px;
+  border-radius: 25px 0;
 }

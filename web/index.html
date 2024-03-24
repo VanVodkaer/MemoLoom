@@ -11,19 +11,23 @@
       <!-- 导航栏部分 -->
       <div class="nav">
         <button class="nav-btn" id="create-new">新建笔记</button>
+        <button class="nav-btn" id="sort-selected">排序</button>
         <button class="nav-btn" id="copy-selected">复制</button>
         <button class="nav-btn" id="dele-selected">删除</button>
-        <button class="nav-btn" id="sort-selected">排序</button>
       </div>
       <!-- 笔记部分 -->
       <div class="main-content">
-        <div class="note-list-head">
-          <input
-            type="checkbox"
-            class="list-checkbox-all list-head"
-            name="checkbox-all"
-          />
+        <!-- 笔记导航条 -->
+        <div class="note-list-head-nav">
+          <div class="note-list-head" id="list-select-all">
+            <input type="checkbox" id="list-select-all-btn" />
+          </div>
+          <div class="note-list-head" id="list-note-title">笔记标题</div>
+          <div class="note-list-head" id="list-create-date">创建日期</div>
+          <div class="note-list-head" id="list-last-edited">最后修改</div>
+          <div class="note-list-head" id="list-function-btn">操作按钮</div>
         </div>
+        <!-- 单条笔记模板 -->
       </div>
     </div>
   </body>
