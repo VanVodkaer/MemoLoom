@@ -11,6 +11,8 @@ const config = {
   MYSQL_PASSWORD: "",
   // 数据库名称
   MYSQL_DATABASE: "",
+  // 表名称
+  MYSQL_TABLE: "",
 };
 
 module.exports = config;
