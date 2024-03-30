@@ -1,13 +1,13 @@
-const http = require("http");
-const url = require("url");
+// const http = require("http");
+// const url = require("url");
+const express = require("express");
+const cors = require("cors");
 const config = require("./config.js");
 const read = require("./read.js");
 
-// 1. 启动服务端
-// 2. 监听笔记列表请求
-// 3. 返回数据
-
-const server = http.createServer();
+const server = express();
+//允许跨域请求
+server.use(cors());
 
 server.on("request", async (req, res) => {
   const parsedUrl = url.parse(req.url, true); // 使用url.parse解析请求URL
@@ -29,6 +29,6 @@ server.on("request", async (req, res) => {
   }
 });
 
-server.listen(config.port, () => {
+server.on(config.SERVER_PORT, () => {
   console.log("Server Start");
 });

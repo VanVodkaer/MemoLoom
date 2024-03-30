@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/VanVodkaer/MemoLoom/issues"
   },
-  "homepage": "https://github.com/VanVodkaer/MemoLoom#readme"
+  "homepage": "https://github.com/VanVodkaer/MemoLoom#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
 }

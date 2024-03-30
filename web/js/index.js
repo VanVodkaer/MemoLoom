@@ -1,5 +1,6 @@
 import { config } from "./config.js";
 
+// 渲染一条笔记
 function renderElements(index, title, create = " ", edit = " ") {
   const appendElement = document.createElement("div");
   appendElement.classList.add("note-list-body-box");
