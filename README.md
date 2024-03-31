@@ -14,4 +14,8 @@ Actually writing it down, I encountered many difficulties. There are still many 
 
 ### Runtime Environment
 
-Server runtime environment: Node.js
+Server runtime environment: Node.js MySql
+
+### Use Configuration
+
+[Server Configuration](https://github.com/VanVodkaer/MemoLoom/blob/main/document/server.md)

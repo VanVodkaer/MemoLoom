@@ -14,4 +14,8 @@
 
 ### 运行环境
 
-服务端运行环境：Node.js
+服务端运行环境：Node.js MySql
+
+### 使用配置
+
+[服务端配置](https://github.com/VanVodkaer/MemoLoom/blob/main/document/server.md)
