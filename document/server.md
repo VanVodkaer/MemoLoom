@@ -20,3 +20,4 @@
     - `title`笔记标题
     - `create_date`创建时间 格式 YYYY-MM-DD hh:mm:ss
     - `lastedit_date`创建时间 格式 YYYY-MM-DD hh:mm:ss
+  - 发生错误时返回`Server error`, 状态码`500`
