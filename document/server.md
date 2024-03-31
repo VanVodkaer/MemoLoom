@@ -14,3 +14,9 @@
 ## 服务端接口
 
 - `/api/notedata` 返回所有笔记列表
+  - 返回格式 `JSON`
+  - 返回对象数组，其中每个对象的内容如下
+    - `id`笔记 id
+    - `title`笔记标题
+    - `create_date`创建时间 格式 YYYY-MM-DD hh:mm:ss
+    - `lastedit_date`创建时间 格式 YYYY-MM-DD hh:mm:ss
