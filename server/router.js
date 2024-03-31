@@ -15,7 +15,6 @@ router.get("/notedata", async (req, res, next) => {
   } catch (error) {
     console.error(error);
     res.status(500).send("Server error");
-    next(error); // 发生错误时，传递错误到错误处理中间件
   }
 });
 
