@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS ${config.MYSQL_TABLE} (
 }
 
 // 查询所有 笔记列表
-const notedataSqlStr = `SELECT * FROM ${config.MYSQL_TABLE}`;
+const notedataSqlStr = `SELECT id,title,create_date,lastedit_date FROM ${config.MYSQL_TABLE}`;
 function noteData() {
   return new Promise((resolve, reject) => {
     db.query(notedataSqlStr, (err, result) => {
