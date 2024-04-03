@@ -26,9 +26,32 @@
           <div class="note-list-head" id="list-last-edited-all">最后修改</div>
           <div class="note-list-head" id="list-function-btn-all">操作按钮</div>
         </div>
-        <!-- 插入条目-->
+        <!-- 插入条目开始-->
+
+        <div class="note-list-body-box" v-for="item in notedata" :key="item.id">
+          <div class="note-list-body list-select">
+            <input type="checkbox" class="list-select-btn" id="ch1" />
+          </div>
+          <div class="note-list-body list-note-title" id="ti1">
+            {{item.title}}
+          </div>
+          <div class="note-list-body list-create-date">
+            {{item.create_date}}
+          </div>
+          <div class="note-list-body list-last-edited">
+            {{item.lastedit_date}}
+          </div>
+          <div class="note-list-body list-function-btn">
+            <button>编辑</button>
+            <button>复制</button>
+            <button>删除</button>
+          </div>
+        </div>
+
+        <!-- 插入条目结束 -->
       </div>
     </div>
+    <script src="./js/vue/vue2.js"></script>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

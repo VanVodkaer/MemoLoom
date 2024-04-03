@@ -52,20 +52,23 @@ function renderElements(element) {
   return appendElement;
 }
 
+// 渲染一条笔记 （Vue2重写）
+const index = new Vue({
+  el: ".main",
+  data: {
+    notedata: [],
+  },
+});
+
 const notedataXHR = new XMLHttpRequest();
 notedataXHR.open("GET", `${config.apiURL}` + "api/notedata");
 notedataXHR.addEventListener("loadend", () => {
-  // 1. 获取现有笔记列表
-  let notedata = JSON.parse(notedataXHR.response);
+  // 1. 获取现有笔记列表 方法
+  index.notedata = JSON.parse(notedataXHR.response);
   console.log(notedata);
-  // 2. 渲染笔记列表
-  // 在nav后面追加
-  const insertplace = document.querySelector(".main-content");
-  notedata.forEach((element) => {
-    insertplace.appendChild(renderElements(element));
-  });
 });
 
+// 2. 发起请求
 notedataXHR.send();
 
 // 3. 响应用户操作
