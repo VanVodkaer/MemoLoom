@@ -1,6 +1,6 @@
 // database.js 数据库相关操作
 
-const config = require("./config.js");
+const config = require("../config.js");
 const mysql = require("mysql");
 
 // 修改返回时间格式 为 YYYY-MM-DD hh:mm:ss

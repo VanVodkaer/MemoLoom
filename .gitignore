@@ -1,6 +1,2 @@
-MemoLoom.code-workspace
 .vscode
-node_modules
-server/notedata
-server/config.js
-web/js/config.js
+MemoLoom.code-workspace

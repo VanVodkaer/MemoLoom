@@ -1,10 +1,10 @@
 {
-  "name": "memoloom",
+  "name": "memoloom-server",
   "version": "1.0.0",
-  "description": "A web-based lightweight notebook",
+  "description": "A web-based lightweight notebook (Server)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -13,16 +13,18 @@
   "keywords": [
     "Web",
     "Notebook",
-    "Mysql",
-    "Vue",
-    "Vue2",
-    "Nodejs",
-    "Node.js"
+    "Server",
+    "Nodejs"
   ],
   "author": "VanVodkaer",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VanVodkaer/MemoLoom/issues"
   },
-  "homepage": "https://github.com/VanVodkaer/MemoLoom#readme"
+  "homepage": "https://github.com/VanVodkaer/MemoLoom#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
 }

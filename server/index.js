@@ -5,8 +5,8 @@ const config = require("./config.js");
 const express = require("express");
 const cors = require("cors");
 
-const database = require("./database.js");
-const router = require("./router.js");
+const database = require("./components/database.js");
+const router = require("./components/router.js");
 
 // 初始化数据库
 database.initDatabase();
