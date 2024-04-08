@@ -1,8 +1,13 @@
 # MemoLoom
 
-English | [简体中文](https://github.com/VanVodkaer/MemoLoom/blob/main/README_zh-CN.md)
-
-A web-based lightweight notebook
+<p>
+  <img src="https://github.com/VanVodkaer/MemoLoom/blob/main/Logo.png?raw=true" alt="MemoLoom Logo" width="100" style="float: left; margin-right: 10px;"/>
+  <span>English | <a href="https://github.com/VanVodkaer/MemoLoom/blob/main/README_zh-CN.md">简体中文</a></span>
+  <br>
+  <br>
+  A web-based lightweight notebook
+</p>
+<br>
 
 ### About This Project
 

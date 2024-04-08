@@ -1,8 +1,13 @@
 # MemoLoom
 
-[English](https://github.com/VanVodkaer/MemoLoom/blob/main/README.md) | 简体中文
-
-基于 web 的轻量级笔记本
+<p>
+  <img src="https://github.com/VanVodkaer/MemoLoom/blob/main/Logo.png?raw=true" alt="MemoLoom Logo" width="100" style="float: left; margin-right: 10px;"/>
+  <span><a href="https://github.com/VanVodkaer/MemoLoom/blob/main/README.md">English</a>| 简体中文</a></span>
+  <br>
+  <br>
+  基于 web 的轻量级笔记本
+</p>
+<br>
 
 ### 关于该项目
 
