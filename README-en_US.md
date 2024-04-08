@@ -3,7 +3,7 @@
 <div align="center">
   <img src="Logo.png" alt="MemoLoom Logo" width="100"/>
   <br>
-  <span><a href="README_zh-CN.md">简体中文</a> | English</span>
+  <span><a href="README.md">简体中文</a> | English</span>
   <br>
   A web-based lightweight notebook
 </div>

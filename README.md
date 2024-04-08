@@ -3,7 +3,7 @@
 <div align="center">
   <img src="Logo.png" alt="MemoLoom Logo" width="100"/>
   <br>
-  <span>简体中文 | <a href="README.md">English</a></span>
+  <span>简体中文 | <a href="README-en_US.md">English</a></span>
   <br>
   基于 web 的轻量级笔记本
 </div>
