@@ -23,11 +23,9 @@ export default {
     };
   },
   created() {
-    // 使用箭头函数定义异步函数，确保this指向正确
-    const getList = async () => {
+    (async () => {
       this.notelist = (await GetListall()) || [];
-    };
-    getList();
+    })();
   },
 };
 </script>
