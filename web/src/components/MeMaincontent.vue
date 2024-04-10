@@ -3,14 +3,19 @@
     <!-- 笔记导航条 -->
     <MeListhead></MeListhead>
     <!-- 单条笔记渲染-->
-    <MeListitem></MeListitem>
+    <MeListitem v-for="item in list" :key="item.id" :item="item"></MeListitem>
   </div>
 </template>
 
 <script>
 import MeListhead from "./MeListhead.vue";
 import MeListitem from "./MeListitem.vue";
-export default { components: { MeListhead, MeListitem } };
+export default {
+  components: { MeListhead, MeListitem },
+  props: {
+    list: Array,
+  },
+};
 </script>
 
 <style>

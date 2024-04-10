@@ -3,17 +3,31 @@
     <!-- 导航栏部分 -->
     <MeNavtool></MeNavtool>
     <!-- 笔记部分 -->
-    <MeMaincontent></MeMaincontent>
+    <MeMaincontent :list="notelist"></MeMaincontent>
   </div>
 </template>
 
 <script>
 import MeNavtool from "./components/MeNavtool.vue";
 import MeMaincontent from "./components/MeMaincontent.vue";
+import { GetListall } from "./js/GetListall.js";
+
 export default {
   components: {
     MeNavtool,
     MeMaincontent,
+  },
+  data() {
+    return {
+      notelist: [],
+    };
+  },
+  created() {
+    // 使用箭头函数定义异步函数，确保this指向正确
+    const getList = async () => {
+      this.notelist = (await GetListall()) || [];
+    };
+    getList();
   },
 };
 </script>

@@ -4,7 +4,7 @@
   "description": "A web-based lightweight notebook (Server)",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon ./index.js"
+    "serve": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
