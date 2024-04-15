@@ -25,3 +25,7 @@
 ### 使用配置
 
 [服务端配置](https://github.com/VanVodkaer/MemoLoom/blob/main/document/server.md)
+
+---
+
+# 由于后面学了 Vue3 这个项目就弃坑了 --2024.4.15
